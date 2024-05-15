@@ -12,8 +12,6 @@ Bu proje, Rossmann mağazaları için günlük satış tahminleri yapmayı amaç
 - [Sonuçlar](#sonuçlar)
 - [Gelecek Çalışmalar](#gelecek-çalışmalar)
 - [Kurulum](#kurulum)
-- [Kullanım](#kullanım)
-- [İndirme](#indirme)
 
 ## Giriş
 
@@ -53,7 +51,6 @@ def try_model(model):
 Özellik Önem Düzeyleri
 Özellik önem düzeyleri, modelin hangi özelliklere daha fazla dikkat ettiğini gösterir. Aşağıda en önemli 10 özelliği gösteren bir çubuk grafik yer almaktadır:
 
-python
 ```python
 sns.barplot(data=importance_df.head(10), x='importance', y='feature')
 ```
@@ -62,6 +59,7 @@ Sonuçlar
 Günler ve Aylar: Pazar ve pazartesi günleri yüksek satışlar görülürken, Aralık ayında yılın en yüksek satışları gerçekleşmiştir.
 Yıllık İstikrar: Satışlar yıllık bazda istikrarlı bir şekilde seyretmiştir.
 Promosyon Etkisi: Promosyonların satışları önemli ölçüde artırdığı gözlemlenmiştir.
+
 Gelecek Çalışmalar
 Ek Özelliklerin Eklenmesi:
 Hava durumu verileri, sosyal medya etkileşimleri ve ekonomik göstergeler gibi ek veriler kullanılabilir.
@@ -71,22 +69,13 @@ Zaman Serisi Analizi:
 Mevsimsellik ve trend analizleri için ARIMA ve Prophet modelleri kullanılabilir.
 Modelin Gerçek Zamanlı Kullanımı:
 Gerçek zamanlı tahminler ve otomatik raporlama sistemleri geliştirilebilir.
-Kurulum
-Proje ortamını kurmak için aşağıdaki adımları izleyin:
 
+Kurulum
 Gerekli kütüphaneleri yükleyin:
 
-bash
-Kodu kopyala
+```python
 pip install -r requirements.txt
+```
 Veri setlerini indirin ve uygun dizine yerleştirin.
 
-Kullanım
-Projeyi çalıştırmak için Jupyter Notebook veya benzeri bir ortamda aşağıdaki adımları izleyin:
 
-Veri setlerini yükleyin ve ön işleme adımlarını gerçekleştirin.
-Modelleri eğitip değerlendirin.
-Özellik önem düzeylerini analiz edin.
-Sonuçları ve gelecekte yapılacak çalışmaları raporlayın.
-İndirme
-Proje dosyalarını ve veri setlerini indirmek için bu bağlantıyı kullanabilirsiniz.
